@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Twitch Streamers</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="page-container">
+    <header>
+      <h1>Twitch Streamers</h1>
+      <nav class="clearfix">
+        <a href="javascript:;" id="nav-all" class="active">All</a>
+        <a href="javascript:;" id="nav-online">Online</a>
+        <a href="javascript:;" id="nav-offline">Offline</a>
+      </nav>
+    </header>
+    <section class="tab-content">
+      <h2 class="tab-title">All Streamers</h2>
+      <div class="searchbox"><input type="text" id="search" placeholder="Search streamer..."></div>
+      <div id="loading" class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+      <ul id="twitchList" class="clearfix"></ul>
+    </section>
+    <footer><small>Created by Elliot Zeng, 2017</small></footer>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
