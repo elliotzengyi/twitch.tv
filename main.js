@@ -38,9 +38,9 @@ function showLis(attr) {
 	$(".tab-title").text($("#nav-" + attr).text() + " Streamers");
 
 	if( attr === "all" ) {
-		$("#twitchList li").fadeIn();
+		$("#twitchList li").show();
 	} else {
-		$("#twitchList li." + attr).fadeIn();
+		$("#twitchList li." + attr).show();
 	}
 }
 
@@ -71,34 +71,32 @@ $(document).ready(function(){
 
 				$userObj[user].url = channelData.url;
 
+				console.log($userObj[user].url);
+
 				$counter++;
 
 				if( $counter === array.length ) {
 					$("#loading").hide();
 					createLis();
 					console.log($userObj);
+
+					$('#search').bind('input propertychange', function() {
+						$("#twitchList li").hide();
+						if( $("#search").val() ) {
+							$("#twitchList li[id*='" + $("#search").val() + "']").show();
+						} else {
+							$("#twitchList li").fadeIn();
+						}
+					});
+
+					$("#nav-all").click(function(){showLis("all");});
+					$("#nav-online").click(function(){showLis("online");});
+					$("#nav-offline").click(function(){showLis("offline");});
 				}
 			});
 
 		});
 
 	});
-
-	$('#search').bind('input propertychange', function() {
-
-		$("#twitchList li").hide();
-    
-		if( $("#search").val() ) {
-			$("#twitchList li[id*='" + $("#search").val() + "']").show();
-
-		} else {
-			$("#twitchList li").fadeIn();
-		}
-
-	});
-
-	$("#nav-all").click(function(){showLis("all");});
-	$("#nav-online").click(function(){showLis("online");});
-	$("#nav-offline").click(function(){showLis("offline");});
 	
 });
