@@ -53,7 +53,7 @@ $(document).ready(function(){
 
 		$.getJSON("https://wind-bow.glitch.me/twitch-api/streams/" + user + "?callback=?", function(data) {
 
-			console.log(data.stream);
+			//console.log(data.stream);
 
 			if ( data.stream === null ) {
 				$userObj[user].status = "offline";
@@ -71,14 +71,14 @@ $(document).ready(function(){
 
 				$userObj[user].url = channelData.url;
 
-				console.log($userObj[user].url);
+				//console.log($userObj[user].url);
 
 				$counter++;
 
 				if( $counter === array.length ) {
 					$("#loading").hide();
 					createLis();
-					console.log($userObj);
+					//console.log($userObj);
 
 					$('#search').bind('input propertychange', function() {
 						$("#twitchList li").hide();
