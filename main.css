@@ -144,14 +144,14 @@ nav a.active {
     display: block;
     text-align: center;
     width: 100%;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
     opacity: .8;
 }
 #twitchList li a:hover {
     opacity: 1;
-    background-size: 222px 222px;
+    background-size: 120% 120%;
     -webkit-animation: hoveronline .32s ease-in-out;
             animation: hoveronline .32s ease-in-out;
 }
@@ -161,7 +161,7 @@ nav a.active {
         opacity: .8;
     }
     to { 
-        background-size: 222px 222px; 
+        background-size: 120% 120%; 
         opacity: 1;
     }
 }
@@ -172,7 +172,7 @@ nav a.active {
         opacity: .8;
     }
     to { 
-        background-size: 222px 222px; 
+        background-size: 120% 120%; 
         opacity: 1;
     }
 }
