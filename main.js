@@ -66,7 +66,7 @@ $(document).ready(function(){
 				if( channelData.logo ) {
 					$userObj[user].img = channelData.logo;
 				} else {
-					$userObj[user].img = "http://via.placeholder.com/175x175/AED581/ffffff?text=No%20Photo";
+					$userObj[user].img = "https://via.placeholder.com/175x175/AED581/ffffff?text=No%20Photo";
 				}
 
 				$userObj[user].url = channelData.url;
