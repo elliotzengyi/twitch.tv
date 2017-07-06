@@ -144,35 +144,35 @@ nav a.active {
     display: block;
     text-align: center;
     width: 100%;
-    background-size: 100% 100%;
+    background-size: 120% 120%;
     background-repeat: no-repeat;
     background-position: center center;
     opacity: .8;
 }
 #twitchList li a:hover {
     opacity: 1;
-    background-size: 120% 120%;
+    background-size: 100% 100%;
     -webkit-animation: hoveronline .32s ease-in-out;
             animation: hoveronline .32s ease-in-out;
 }
 @-webkit-keyframes hoveronline {
     from { 
-        background-size: 100% 100%; 
+        background-size: 120% 120%; 
         opacity: .8;
     }
     to { 
-        background-size: 120% 120%; 
+        background-size: 100% 100%; 
         opacity: 1;
     }
 }
  
 @keyframes hoveronline {
     from { 
-        background-size: 100% 100%; 
+        background-size: 120% 120%; 
         opacity: .8;
     }
     to { 
-        background-size: 120% 120%; 
+        background-size: 100% 100%; 
         opacity: 1;
     }
 }
