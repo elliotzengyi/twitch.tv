@@ -199,22 +199,22 @@ nav a.active {
 }
 @-webkit-keyframes hoveroffline {
     from { 
-        background-size: 100% 100%; 
+        background-size: 120% 120%; 
         opacity: .3;
     }
     to { 
-        background-size: 222px 222px; 
+        background-size: 100% 100%; 
         opacity: .7;
     }
 }
  
 @keyframes hoveroffline {
     from { 
-        background-size: 100% 100%; 
+        background-size: 120% 120%; 
         opacity: .3;
     }
     to { 
-        background-size: 222px 222px; 
+        background-size: 100% 100%; 
         opacity: .7;
     }
 }
